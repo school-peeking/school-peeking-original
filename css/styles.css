@@ -1,0 +1,86 @@
+body {
+    font-family: 'NanumSquareRound';
+    font-weight: 400;
+    user-select: none;
+    background-color: #f8f9fa;
+}
+
+.masthead h1 {
+    font-family: 'NanumSquareRound';
+    font-weight: 700;
+}
+
+.btn {
+    font-family: 'NanumSquareRound';
+    font-size: 20px;
+    padding: 15px 20px;
+}
+
+.service2 {
+    border-left: none;
+    border-right: .5rem solid #64a19d;
+    padding: 0 2rem 0 0;
+}
+
+.masthead {
+    /* background: linear-gradient(to bottom,rgba(22, 22, 22, 0) 0,rgba(22, 22, 22, 0) 65%,#f8f9fa 100%),url(../img/main-img.HEIC) no-repeat center center;  */
+    background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22, 22, 22, 0) 75%,#16161600 100%),url(../img/main-img.HEIC) no-repeat;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main-title {
+    text-shadow: 4px 2px 2px #8080808f;
+
+    background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
+    -webkit-text-fill-color: white;
+}
+
+.main-intro {
+    color: white;
+    -webkit-text-fill-color: #343a40;
+}
+
+.text-white-50 {
+    color: white!important;
+}
+
+#mainNav .nav-link, #mainNav .navbar-brand {
+    -webkit-transition: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: #343a40;
+    font-weight: 700;
+}
+
+.about-section {
+    background: linear-gradient(to bottom,#16161600 0,rgba(22, 22, 22, 0) 75%,rgba(22, 22, 22, 0) 100%);
+}
+
+/* .title-area {
+    background-color: #0000003b;;
+    padding: 30px 30px 0px 30px;
+    border-radius: 13px;
+} */
+
+.signup-section {
+    background: linear-gradient(to bottom,rgba(22, 22, 22, 0) 0,rgba(22, 22, 22, 0) 75%,#16161600 100%), url(../img/main-img-cut.heic) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#signup h2 {
+    background-color: rgba(0, 0, 0, 0.36);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    color: black;
+}
