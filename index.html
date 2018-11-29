@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>첫 등교는 IP로!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/firebase-function.js"></script>
+  </head>
+
+  <body id="page-top">
+    <script>
+      userSessionCheck();  
+    </script>
+
+    <div class="header">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mainNav" id="mainNav" style="display: none">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">첫 등교는 IP로!</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">서비스</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">기능</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="roadview.html" style="display: none" id="roadviewmenu">로드뷰</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="inventory.html" style="display: none" id="inventorymenu">인벤토리</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="coupon.html" style="display: none" id="couponmenu">인증서</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="rank.html" style="display: none" id="rankmenu">랭킹</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#signup" id="loginmenu">로그인/회원가입</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="" id="logoutmenu" style="display: none">로그아웃</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <div class="title-area">
+            <h1 class="mx-auto my-0 text-uppercase main-title">MIRIM</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5 main-intro" style="line-height: 1.7em; padding-bottom: 20px;">아름다운 숲, 미림에 오신 것을 정말 환영합니다.<br>여기 당신을 위한 로드뷰가 있습니다.</h2>
+          </div>
+          <a href="#about" class="btn btn-primary js-scroll-trigger" style="font-size: 20px;">여행 시작</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="mb-4">완벽한 미림 라이프를 꿈꾸며</h2>
+            <p>미림인이라는 칭호를 얻은 당신, 이제는 완벽한 미림인이 되어 봅시다.<br>
+              로드뷰를 통해 학교 구석구석을 탐험하고, 퀴즈를 풀어보세요!<br><br>
+              <b>로그인 후, 상단 메뉴에서 로드뷰를 클릭 후 각 장소에 있는 퀴즈를 찾아 풀 수 있답니다</b><br>
+              퀴즈를 맞히면 각종 아이템과 인증서가 제공됩니다! :)<br><br>
+              학교의 복잡한 지리도 익히고, 각종 혜택도 받아보세요!<br>
+              캐릭터를 꾸미고, 인증서는 동아리 면접 등에 사용할 수 있습니다<br><br>
+              당신의 완벽한 미림 라이프를 응원합니다
+            </p>
+          </div>
+        </div>
+        <img src="img/ipad.png" class="img-fluid" alt="">
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+      <div class="container">
+
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/main1.png" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>숲을 탐험하기 위한 지도</h4>
+              <p class="text-black-50 mb-0">미림, 아름다운 숲에 들어서기 앞서 집이나 학교, 당신이 원하는 어떤 곳에서든 간편하게 학교를 구경하세요.<br><b>당신을 위한 로드뷰가 여기 있습니다.</b></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-4 col-lg-5">
+            <div class="text-center text-lg-right service2">
+              <h4>지피지기, 백전백승</h4>
+              <p class="text-black-50 mb-0">적을 알고 나를 알면 승리할 수 있습니다.<br><b>문제를 풀어보며 미림은 어떤 곳인지,<br>그 속에서의 나의 실력은 어떤지 파악하세요.</b></p>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/main2.png" alt="">
+          </div>
+        </div>
+
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/main3.png" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>나의 열매, 커스터마이징</h4>
+              <p class="text-black-50 mb-0">문제를 맞추고 캐릭터를 위한 아이템으로 <b>프로필을 커스터마이징</b> 하세요. 각종 동아리 문제를 해결한 후에는 <b>인증서</b>도 받을 수 있답니다.</p>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+            <h2 class="text-white mb-5">이제 제대로 즐길 준비가 되셨다면</h2>
+
+            <input type="button" class="btn btn-primary mx-auto" onclick="location.href='login.html'" value="로그인하기">
+            <input type="button" class="btn btn-primary mx-auto" onclick="location.href='form.html'" value="회원가입하기">
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <div class="social d-flex justify-content-center">
+          <a href="#" class="mx-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="mx-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="mx-2">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+    <!-- Footer -->
+    <footer class="small text-center">
+      <div class="container" style="font-size: 18px;">
+        Copyright &copy; 시골사람(김예빈, 이유정) 2018<br>♡ <b>Thanks to 정효은, 정민지, 윤주하, 양수빈, 함기훈 선생님</b> ♡
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+</html>

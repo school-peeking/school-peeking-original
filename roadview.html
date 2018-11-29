@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>첫 등교는 IP로!</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="css/roadview.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="#" class="scene" data-id="0-sam_100_0021">
+        <li class="text">강당</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="1-sam_100_0030">
+        <li class="text">매점 가는 길목</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="2-sam_100_0031">
+        <li class="text">매점 입구</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="3-sam_100_0032">
+        <li class="text">매점</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="4-sam_100_0033">
+        <li class="text">매점 건물 입구</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="5-sam_100_0034">
+        <li class="text">매점 쪽 다리</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="6-sam_100_0035">
+        <li class="text">본관 가는 길목</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="7-1">
+        <li class="text">2F 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="8-2">
+        <li class="text">3F 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="9-3">
+        <li class="text">2F 중앙</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="10-4">
+        <li class="text">2F 행정실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="11-5">
+        <li class="text">2F 미림여고 교장실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="12-6">
+        <li class="text">2F 3교무실 앞</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="13-7">
+        <li class="text">2F 3교무실 뒤</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="14-8">
+        <li class="text">2F 상담실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="15-9">
+        <li class="text">2F 진로체험실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="16-10">
+        <li class="text">2F 과학실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="17-11">
+        <li class="text">2F 복도 끝</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="18-12">
+        <li class="text">2F 후문</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="19-13">
+        <li class="text">쓰레기장 가는 길</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="20-14">
+        <li class="text">쓰레기장</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="21-16">
+        <li class="text">2F 미림여정 교장실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="22-17">
+        <li class="text">2F 1교무실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="23-18">
+        <li class="text">2F 1교무실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="24-19">
+        <li class="text">별관 가는 길</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="25-20">
+        <li class="text">3F 중앙</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="26-21">
+        <li class="text">3F 방송실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="27-22">
+        <li class="text">3F 학교 기업실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="28-23">
+        <li class="text">3F 교내 기업실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="29-24">
+        <li class="text">3F 4교무실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="30-25">
+        <li class="text">3F 4교무실 뒷문</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="31-26_22">
+        <li class="text">3F 2-2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="32-26_21">
+        <li class="text">3F 2-1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="33-27">
+        <li class="text">3F 뉴솔 1,2실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="34-28">
+        <li class="text">3F 복도 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="35-29">
+        <li class="text">3F 앱창작터지원센터</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="36-30">
+        <li class="text">3F 동아리실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="37-31">
+        <li class="text">3F 디자인 2실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="38-32">
+        <li class="text">3F 인미 1실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="39-33">
+        <li class="text">3F 스마트 앱창작터</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="40-34">
+        <li class="text">4F 중앙 복도</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="41-35">
+        <li class="text">4F 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="42-36">
+        <li class="text">4F 2-5</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="43-37">
+        <li class="text">4F 2-6 길목</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="44-38">
+        <li class="text">4F 2-6</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="45-39">
+        <li class="text">4F 앱창 2실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="46-40">
+        <li class="text">4F 커리어존 입구</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="47-41">
+        <li class="text">4F 무한상상 카페</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="48-42">
+        <li class="text">4F 디지털 스튜디오</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="49-43">
+        <li class="text">4F 겜메실 앞</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="50-44">
+        <li class="text">4F 겜메실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="51-45">
+        <li class="text">4F 2-4</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="52-46">
+        <li class="text">4F 2-3</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="53-47">
+        <li class="text">4F 1-1, 1-6</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="54-48">
+        <li class="text">4F 1-2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="55-49">
+        <li class="text">4F 1-3</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="56-50">
+        <li class="text">4F 복도 끝</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="57-51">
+        <li class="text">4F 복도 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="58-52">
+        <li class="text">3F AS실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="59-53">
+        <li class="text">2F 복도 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="60-54">
+        <li class="text">1F ATM 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="61-55">
+        <li class="text">1F ATM</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="62-56">
+        <li class="text">1F ATM 입구</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="63-57">
+        <li class="text">1F 중앙계단 입구</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="64-58">
+        <li class="text">1F 중앙계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="65-59">
+        <li class="text">3F 복도끝 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="66-60">
+        <li class="text">4F 복도끝 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="67-61">
+        <li class="text">별관 가는 길</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="68-62">
+        <li class="text">2F 별관 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="69-63">
+        <li class="text">2F 별관 3-1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="70-64">
+        <li class="text">2F 별관 3-2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="71-65">
+        <li class="text">2F 별관 3-3</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="72-66">
+        <li class="text">2F 별관 복도</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="73-67">
+        <li class="text">2F 별관 예절 교육실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="74-68">
+        <li class="text">1F 별관 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="75-69">
+        <li class="text">1F 별관 3-6</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="76-70">
+        <li class="text">1F 별관 3-5</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="77-71">
+        <li class="text">1F 별관 3-4</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="78-72">
+        <li class="text">1F 별관 복도</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="79-73">
+        <li class="text">1F 별관 가사실습실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="80-74">
+        <li class="text">2F 별관 뒤쪽 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="81-75">
+        <li class="text">1F 별관 뒤쪽 계단</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="82-76">
+        <li class="text">강당 건물</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="83-77">
+        <li class="text">음악 감상실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="84-78">
+        <li class="text">진로 활동실</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="85-79">
+        <li class="text">컨설팅룸</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="86-80">
+        <li class="text">1F 별관 계단</li>
+      </a>
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="index.html" id="autorotateToggle" style="background-color: rgba(81, 126, 122);">
+  <img class="icon off" src="img/homeBtn.png">
+</a>
+
+<a href="#" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="#" id="sceneListToggle" style="background-color: rgba(81, 126, 122);">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="#" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="#" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="#" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="#" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="#" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="#" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/es5-shim.js"></script>
+<script src="vendor/eventShim.js"></script>
+<script src="vendor/classList.js"></script>
+<script src="vendor/requestAnimationFrame.js" ></script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="js/data.js"></script>
+<script src="js/roadview.js"></script>
+
+</body>
+</html>

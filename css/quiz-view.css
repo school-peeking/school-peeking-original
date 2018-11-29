@@ -1,0 +1,145 @@
+body {
+    
+}
+
+#mainNav {
+    /* background-color: #64a19d; */
+}
+
+.nav-item:hover {
+    background-color: #64a19d!important;
+}
+
+.login-img {
+    background-image: url('../assets/img_1_ori.HEIC');
+    max-height: 480px;
+    overflow: hidden;
+    width: 100%;
+    height: 480px;
+    position: relative;
+    align-items: center;
+}
+
+.login-section {
+    margin-top: 200px;
+}
+
+.login-name {
+    margin-top: 213px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    line-height: 2;
+    height: 39px;
+}
+
+.quiz {
+    width: 1000px;
+    background-color: white;
+    border-radius: 30px;
+    /* box-shadow: 0px 11px 48px 0 rgba(0, 0, 0, 0.05); */
+    margin:0 auto;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+.quiz-title {
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 21px;
+}
+
+.quiz-inst {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.quiz-form {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.28;
+    text-align: left;
+}
+
+.quiz-form label{
+    margin-left: 110px;
+}
+
+/* .login-pw input{
+    font-family: serif;
+} */
+
+input{
+    width: 300px;
+    height: 55px;
+    border-radius: 10px;
+    border: solid 3px #64a19d;
+    background-color: #fff;
+    outline: none;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.quiz-ul {
+    list-style:none;
+    /* display: inline; */
+
+    display: table;
+    margin: 20px auto;
+    padding: 0;
+    text-align: center;
+}
+
+.quiz-li {
+    height: 100%;
+    margin: 20px;
+    list-style:none;
+    font-size: 23px;
+    padding: 10px 20px;
+}
+
+.quiz-li:hover {
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.quiz-title {
+    margin: 10px 0px;
+    background-color: bisque;
+}
+
+input:focus::-webkit-input-placeholder { 
+    font-family: serif;
+    color: transparent; 
+} 
+
+input:focus::-moz-placeholder { 
+    font-family: serif;
+    color: transparent; 
+} 
+
+input:focus:-ms-input-placeholder { 
+    font-family: serif;
+    color: transparent; 
+} 
+
+input:focus::-ms-input-placeholder { 
+    font-family: serif;
+    color: transparent; 
+}
+
+/* form {
+    margin-top: 30px;
+    margin-left: 115px;
+} */
+
+table {
+    margin-left: 100px;
+    margin-top: 45px;
+}

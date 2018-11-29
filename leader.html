@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>첫 등교는 IP로!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/rank.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/firebase-function.js"></script>
+    <script src="js/leader.js"></script>
+  </head>
+
+  <body id="page-top">
+    <script>
+        $(document).ready(function() {
+            var address = unescape(location.href);
+            param = "";
+			if(address.indexOf("id", 0) != -1) {
+                param = address.substring(address.indexOf("id", 0) + 3);
+			} else {
+				param = "0";
+            }
+            userSessionCheck_leader(param);
+        });
+    </script>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">첫 등교는 IP로!</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html" id="firstnav">홈으로</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="roadview.html" id="firstnav">로드뷰</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="inventory.html" id="firstnav">인벤토리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+
+    <div class="mx-auto text-center inven-section" style="max-width: 100%; padding: 0;">
+        <div class="inven">
+            <!-- use it-->
+            <div class="inven-title">정답자 명단</div>
+            <!-- 
+            <div class="inven-item"><img class="item-img" src="img/미림의 정석.png"></div> -->
+            <center>
+            <table class="table text-center">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">순번</th>
+                        <th scope="col">캐릭터</th>
+                        <th scope="col">이름</th>
+                        <th scope="col">경험치</th>
+                    </tr>
+                </thead>
+                <tbody id="rankTable">
+                    <tr>
+                        <td colspan="4">로딩 중입니다 ...</td>
+                    </tr>
+                </tbody>
+            </table>
+            </center>
+        </div>
+    </div>
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+  </body>
+</html>
